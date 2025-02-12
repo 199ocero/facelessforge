@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    :root {
+        --color-accent: var(--color-violet-500);
+        --color-accent-content: var(--color-violet-600);
+        --color-accent-foreground: var(--color-white);
+    }
+
+    .dark {
+        --color-accent: var(--color-violet-500);
+        --color-accent-content: var(--color-violet-400);
+        --color-accent-foreground: var(--color-white);
+    }
+}
